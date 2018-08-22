@@ -2,14 +2,14 @@ local _, NeP = ...
 local _G = _G
 
 local function checkChanneling(target)
-  local name, _, _, _, startTime, endTime, _, notInterruptible = _G.UnitChannelInfo(target)
+  local name, _, _, startTime, endTime, _, notInterruptible = _G.UnitChannelInfo(target)
   if name then return name, startTime, endTime, notInterruptible end
 end
 
 local function checkCasting(target)
   local name, startTime, endTime, notInterruptible = checkChanneling(target)
   if name then return name, startTime, endTime, notInterruptible end
-  name, _,_,_, startTime, endTime, _,_, notInterruptible = _G.UnitCastingInfo(target)
+  name, _, _, startTime, endTime, _, _, notInterruptible = _G.UnitCastingInfo(target)
   if name then return name, startTime, endTime, notInterruptible end
 end
 

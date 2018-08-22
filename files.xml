@@ -7,17 +7,14 @@
 	<!-- Core -->
 	<Script file="NerdPack.lua" />
 	<include file="locale\files.xml" />
-	<Script file="styles.lua" />
 	<include file="tables\files.xml" />
 	<include file="system\files.xml" />
 	<Include file="interface\files.xml" />
 	<Include file="conditions\files.xml" />
 	<Include file="protected\files.xml" />
-	<Script file="commands.lua" />
-	<Script file="fakeunits.lua" />
-	<Script file="actions.lua" />
-	<Script file="misc.lua" />
-	<Script file="apis.lua" />
-	<Script file="deprecated.lua" />
+	<Include file="onload\files.xml" />
+	<Include file="probably_engine\files.xml" />
+	<Include file="combat_routines\files.xml" />
+
 
 </Ui>
